@@ -1,0 +1,28 @@
+{
+  "name": "fbapp-api",
+  "version": "0.0.1",
+  "description": "NodeJS API for Faculty Feedback Management System",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifecompilers/fbapp-api.git"
+  },
+  "author": "LifeCOMPILERS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lifecompilers/fbapp-api/issues"
+  },
+  "homepage": "https://github.com/lifecompilers/fbapp-api#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

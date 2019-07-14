@@ -1,12 +1,11 @@
 import express from 'express';
+import routes from './routes';
 
 const app = express();
 const port = process.env.PORT;
-app.get('/', (_req, res) => {
-    res.json({
-        message: "Pong"
-    });
-});
+
+app.use('/api', routes);
+
 app.listen(port, err => {
     if (err) {
         return console.error(err);

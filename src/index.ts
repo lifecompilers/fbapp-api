@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser'
 import routes from './routes/indexRoutes';
 import logger from 'morgan';
-require('./config/db')
+// require('./config/db')
 
 const app = express();
 const port = process.env.PORT;

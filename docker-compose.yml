@@ -1,10 +1,18 @@
 version: '3'
 services:
-  web:
-    image: ziluli/fbapp-api
+  api:
     container_name: fbapp-api
     build: .
     ports:
       - "8080:8080"
     env_file:
       - .env
+  mongo:
+    image: mongo
+    container_name: fbapp-mongo-db
+    restart: always
+    ports:
+      - "27017:27017"
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+    volumes:
+      - './data/db:/data/db'

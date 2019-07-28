@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: ziluli/fbapp-api
+    container_name: fbapp-api
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
